@@ -1,0 +1,28 @@
+Maven , Gradle
+
+Maven
+Ant 대안으로 만들어진 자바용 프로젝트 관리도구(빌드 도구)
+xml 기반으로 빌드
+직접 연결한 라이브러리들과 역여있는 라이브러리까지 연동되어 관리
+
+Gradle
+오픈소스 기반 빌드 자동화 시스템
+JVM 기반의 빌드 도구로 Ant, Maven 보완
+Android OS 빌드 도구로 채택
+Groovy나 Kotlin 문법을 사용
+
+ Groovy, Kotlin
+ 기존 Groovy에서 Kotlin 변경하는 이유
+ - IDE 와 뛰어난 호완성으로 코드 자동완성 기능
+ - 오류코드 강조
+
+스프링 부트 라이브러리
+spring-boot-starter-web
+     - spring-boot-starter-tomcat: 톰캣 (웹서버)
+     - spring-webmvc: 스프링 웹 MVC
+spring-boot-starter-thymeleaf: 타임리프 템플릿 엔진(View)
+spring-boot-starter(공통): 스프링 부트 + 스프링 코어 + 로깅
+     - spring-boot
+         - spring-core
+     - spring-boot-starter-logging
+         -logback, slf4j
