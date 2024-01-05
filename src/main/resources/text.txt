@@ -98,6 +98,43 @@ SQL Mapper(Mybatis)
 JDBC에서 하던 반복코드를 제거할 수 있게 해준다.
 SQL 직접 작성해야함.
 
+JPA
+- 기존 반복코드, 기본적인 SQL 이런것들을 JPA
+  직접 만들어서 실행해준다.
+- SQL과 데이터 중심의 설계에서 객체 중심의
+  설계로 패러다임이 전환된다.
+- 개발 생산성이 높아진다.
+
+
+ORM (Object Relational Mapping)
+Object와 DB 테이블을 매핑해서 데이터를 객체화 하는 기술
+- 개발자가 반복전인 SQL을 작성하지 않는다.
+- DBMS에 종속되지 않는다.
+- 복잡한 쿼리의 경우에는 JPQL을 사용하거나 SQL Mapper를 사용한다.
+  JPQL (Java Persistence Query Language)
+
+SQL Mapper 대표적인게 Mybatis(iBatis)
+- 자바에서 SQL Mapper를 지원하는 기술
+- SQL을 이용해서 RDB 접근 데이터를 객체화 시켜준다.
+- SQL을 직접 작성하고 ,쿼리 수행결과를 객체와 매핑시킨다.
+- 쿼리문을 xml 분리 가능
+- 복잡한 쿼리문도 작성 가능
+- 객체와 쿼리문을 모두 관리해야하고 CRUD 메소드를 직접 구현해야한다.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
