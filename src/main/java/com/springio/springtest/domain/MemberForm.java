@@ -1,16 +1,7 @@
 package com.springio.springtest.domain;
 
-public class Member {
-    private Long id;
+public class MemberForm {
     private String name;
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
 
     public String getName() {
         return name;
