@@ -10,30 +10,32 @@ import javax.sql.DataSource;
 
 @Configuration
 public class SpringConfig {
-//    private final DataSource dataSource;
-//
-//    public SpringConfig(DataSource dataSource) {
-//        this.dataSource = dataSource;
-//    }
+    //Spring Data JPA
+    private final MemberRepository memberRepository;
 
-    private EntityManager em;
-
-    public SpringConfig(EntityManager em) {
-        this.em = em;
+    public SpringConfig(MemberRepository memberRepository) {
+        this.memberRepository = memberRepository;
     }
+
+    //JPA
+//    private EntityManager em;
+//
+//    public SpringConfig(EntityManager em) {
+//        this.em = em;
+//    }
 
     @Bean
     public MemberService memberService(){
-        return new MemberService(memberRepository());
+        return new MemberService(memberRepository);
     }
 
-    @Bean
-    public MemberRepository memberRepository(){
-
-        //return new MemoryMemberRepository();
-        //return new JdbcMemberRepository(dataSource);
-        //return new JdbcTemplateMemberRepository(dataSource);
-        return new JpaMemberRepository(em);
-    }
+//    @Bean
+//    public MemberRepository memberRepository(){
+//
+//        //return new MemoryMemberRepository();
+//        //return new JdbcMemberRepository(dataSource);
+//        //return new JdbcTemplateMemberRepository(dataSource);
+//        return new JpaMemberRepository(em);
+//    }
 
 }
